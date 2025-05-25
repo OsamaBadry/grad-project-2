@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title> E-commerce website</title>
+</head>
+<body>
+    
+    <header>
+        <div id="nav-list">
+            <ul>
+                <li onclick="viewHome()" > Home </li>
+                <li onclick="viewProducts()" > Products </li>
+                <li onclick="viewCart()" > Cart </li>
+            </ul>
+        </div>
+        <div id="logo">
+            <img src="./images/logo.png" alt="logo image" width="40px">
+        </div>
+        <div id="cart">
+            <ul>
+                <li><a href=""> Sign Up </a></li>
+                <li><a href=""> Login </a></li>
+            </ul>
+        </div>
+    </header>
+
+
+    <div class="page" id="home"> <!-- 1st page ********************************* -->
+        <div id="home-sec1" class="section">
+        <div class="space"></div>
+        <div class="container">
+            <div class="box">
+                <ul>
+                    <li> <a href=""> shirts </a></li>
+                    <li> <a href=""> Pants </a></li>
+                    <li> <a href=""> Shoes </a></li>
+                </ul>
+                <input type="text" placeholder="Search..." >
+                <h2> NEW <br> COLLECTION </h2>
+                <div class="space"></div>
+                <button onclick="viewProducts()"> Go To Shop &rightarrow; </button>
+
+            </div>
+            <div class="box">
+                <img src="./images/homeShirt.png" alt="product image" width="100%">
+            </div>
+            <div class="box">
+                <img src="./images/pant.png" alt="product image" width="100%">
+            </div>
+        </div>
+        </div>
+        <div id="home-sec2" class="section">
+            <div class="space"></div>
+            <div class="sec-header">
+                <h2> NEW <br> THIS WEEK </h2>
+            </div>
+            <div class="container">
+                <div class="box">
+                    <img src="./images/pant.png" alt="product image" width="90%">
+                    <p class="item-name"> Item Name </p>
+                    <p class="item-price"> Price : <b> 120$</b> </p>
+                </div>
+            </div>
+        </div>
+        <div id="home-sec3" class="section">
+            <div class="space"></div>
+            <div class="sec-header">
+                <h2> XIV <br> COLLECTION <br> 23-24 </h2>
+                <span> A11() </span>
+                <span> Men </span>
+                <span> Ladies </span>
+                <span> KIds </span>
+                <hr>
+            </div>
+            <div class="container">
+                <div class="box">
+                    <img src="./images/tshirt.png" alt="product image" width="90%">
+                    <p class="item-name"> Item Name </p>
+                    <p class="item-price"> Price : <b> 120$</b> </p>
+                </div>
+            </div>
+        </div>
+        <div id="home-sec4" class="section">
+            <div class="space"></div>
+            <div id="home-sec4-header">
+            <h2> OUR APPROACH TO FASHION DESIGN </h2>
+            <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid officia ea, deserunt sit, soluta dignissimos laudantium eos libero veniam quas obcaecati. Aperiam quidem eius est inventore amet laborum ipsam quae? </p>
+            </div>
+            <div class="container">
+                <div class="box">
+                    <img src="./images/homePant.png" alt="product image">
+                </div>
+                <div class="box">
+                    <img src="./images/homeShirt.png" alt="product image">
+                </div>
+                <div class="box">
+                    <img src="./images/tshirt.png" alt="product image">
+                </div>
+                <div class="box">
+                    <img src="./images/pant.png" alt="product image">
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="page" id="products"> <!-- 2nd page ************************** -->
+        <div id="page2-sec1" class="section">
+            <div class="space"></div>
+            <div class="sec-header">
+                <h2> PRODUCTS  </h2>
+            </div>
+            <div class="container">
+                <div class="box">
+                    <img src="./images/shirt2.png" alt="product image" width="90%">
+                    <p class="item-name"> Item Name </p>
+                    <p class="item-price"> Price : <b> 190$ </b> </p>
+                    <button> View Details </button>
+                    <button> Add to Cart </button>
+                </div>
+                <div class="box">
+                    <img src="./images/homePant.png" alt="product image" width="90%">
+                    <p class="item-name"> Item Name </p>
+                    <p class="item-price"> Price : <b> 99$ </b> </p>
+                    <button> View Details </button>
+                    <button> Add to Cart </button>
+                </div>
+                <div class="box">
+                    <img src="./images/homeShirt.png" alt="product image" width="90%">
+                    <p class="item-name"> Item Name </p>
+                    <p class="item-price"> Price : <b> 210$</b> </p>
+                    <button> View Details </button>
+                    <button> Add to Cart </button>
+                </div>
+                <div class="box">
+                    <img src="./images/pant3.png" alt="product image" width="90%">
+                    <p class="item-name"> Item Name </p>
+                    <p class="item-price"> Price : <b> 199$</b> </p>
+                    <button> View Details </button>
+                    <button> Add to Cart </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="page" id="cart"> <!-- 3rd page ********************************** -->
+        <div id="products-sec1" class="section">
+            <div class="space"></div>
+            <div class="sec-header">
+                <h2> CART </h2>
+            </div>
+            <div class="cart-container">
+                <div class="col1">
+                    <div class="product">
+                        <img src="./images/homeShirt.png" alt="product image" width="90%">
+                        <p class="item-name"> Item Name </p>
+                        <p class="item-price"> Price : <b> 120$</b> </p>
+                    </div>
+                    
+                </div>
+                <div class="col2">
+                    <div class="space"></div>
+                    <div class="total">
+                        <h3> ORDER SUMMARY </h3>
+                        <p> Subtotal :  120$ </p>
+                        <p> Shiping : <span> 10$ </span></p>
+                        <hr>
+                        <p>Total :  <span> 130$ </span></p>
+                        <div class="space"></div>
+                        <input type="checkbox" name="agreement" id="input-agree">
+                        <label for="agreement"> I agree to Terms and Conditions </label><br>
+                        <button> Continue </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="space"></div>
+    <footer>
+        <div id="inner-footer">
+            <div class="footer-card">
+                <h3> OUR BRANCHES </h3>
+                <ul>
+                    <li><a href=""> Branch 1 </a></li>
+                    <li><a href=""> Branch 2 </a></li>
+                    <li><a href=""> Branch 3 </a></li>
+                </ul>
+                <h3> CONTACT US </h3>
+                <ul>
+                    <li><a href=""> whatsapp : 0123456789 </a></li>
+                    <li><a href=""> email : shop@email.com  </a></li>
+                    <li><a href=""> phone : 0123456789  </a></li>
+                </ul>
+            </div>
+            <div class="footer-card">
+                <h3> BRANDS </h3>
+                <p class="footer-brands" id="gray-brand" style="color: #999;"> VR </p>
+                <p class="footer-brands"> XIV </p>
+                <p class="footer-brands"> QR </p>
+            </div>
+        </div>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
