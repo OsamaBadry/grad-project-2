@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title> product details </title>
+</head>
+<body>
+     <header>
+        <div id="nav-list">
+            <ul>
+                <li onclick="viewHome()" > Home </li>
+                <li onclick="viewProducts()" > Products </li>
+                <li onclick="viewCart()" > Cart </li>
+            </ul>
+        </div>
+        <div id="logo">
+            <img src="E:\osama\web projects\sps final project\grad project 2\images\logo.png" alt="logo image" width="40px">
+        </div>
+        <div id="cart">
+            <ul>
+                <li><a href="signup.html"> Sign Up </a></li>
+                <li><a href="login.html"> Login </a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <div class="three-col">
+            <div class="col col1">
+                <img src="E:\osama\web projects\sps final project\grad project 2\images\shirt2.png" alt=" item image" width="75%" id="main-img">
+            </div>
+            <div class="col col2">
+                <div class="img-box"> <img src="E:\osama\web projects\sps final project\grad project 2\images\shirt2.png" alt="product image " width="100%" id="img1" onclick="changeImg('img1')"> </div>
+                <div class="img-box"> <img src="E:\osama\web projects\sps final project\grad project 2\images\homeShirt.png" alt="product image " width="100%" id="img2" onclick="changeImg('img2')"> </div>
+                <div class="img-box"> <img src="E:\osama\web projects\sps final project\grad project 2\images\tshirt.png" alt="product image " width="100%" id="img3" onclick="changeImg('img3')"> </div>
+            </div>
+            <div class="col col3">
+                <h3> item name </h3>
+                <p>price : 199$ </p>
+                <h4>description : </h4>
+                <p> Lorem ipsum dolor sit amet,  cum distinctio quam sapiente incidunt maiores suscipit accusantium nam.</p>
+                <div class="color-cont">
+                    <p> color : </p> 
+                    <div class="color-box"></div>
+                    <div class="color-box"></div>
+                    <div class="color-box"></div>
+                </div>
+                <div class="size-cont">
+                    <p> size : </p>
+                    <div class="size"> S </div>
+                    <div class="size"> M </div>
+                    <div class="size"> L </div>
+                </div>
+                <a href=""> Find Your Size | Measurment Guide </a> <br>
+                <a href="..//index.html"> <button> Back </button> </a>
+            </div>
+        </div>
+    </main>
+
+    <div class="space"></div>
+    <footer>
+        <div id="inner-footer">
+            <div class="footer-card">
+                <h3> OUR BRANCHES </h3>
+                <ul>
+                    <li><a href=""> Branch 1 </a></li>
+                    <li><a href=""> Branch 2 </a></li>
+                    <li><a href=""> Branch 3 </a></li>
+                </ul>
+                <h3> CONTACT US </h3>
+                <ul>
+                    <li><a href=""> whatsapp : 0123456789 </a></li>
+                    <li><a href=""> email : shop@email.com  </a></li>
+                    <li><a href=""> phone : 0123456789  </a></li>
+                </ul>
+            </div>
+            <div class="footer-card">
+                <h3> BRANDS </h3>
+                <p class="footer-brands" id="gray-brand" style="color: #999;"> VR </p>
+                <p class="footer-brands"> XIV </p>
+                <p class="footer-brands"> QR </p>
+            </div>
+        </div>
+    </footer>
+    <script src="../app.js"></script>  
+    <script>
+        let img = document.getElementById('main-img');
+        function changeImg (imgId) {
+            let imgS = document.getElementById(imgId);
+            console.log(imgS);
+            img.src = imgS.src;
+            console.log(img.src);
+        } 
+
+    </script>
+</body>
+</html>

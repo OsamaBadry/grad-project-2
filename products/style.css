@@ -1,0 +1,137 @@
+* {
+    margin: 0 ;
+    padding: 0 ;
+    box-sizing: border-box ;
+    font-family: Arial, Helvetica, sans-serif ;
+}
+/* headr */
+header {
+    padding: 10px 5% ;
+    background-color: #ddd ;
+    display: flex ;
+    justify-content: space-between ;
+    align-items: center;
+    height: 80px ;
+}
+header li  {
+    display: inline ;
+    margin-right: 15px ;
+}
+
+/* main style */
+
+.three-col {
+    width: 80% ;
+    margin: 15px auto ;
+    padding: 15px ;
+    display: flex ;
+    justify-content: space-evenly ;
+}
+
+
+.col1 , .col3 {
+    width: 40% ;
+}
+.col {
+    
+    height: 80vh ;
+}
+.col1 {
+    border: 1px solid #221 ;
+}
+.col2 {
+    width: 10% ;
+}
+.col3 {
+    padding: 1em ;
+    border: 1px solid #221 ;
+
+}
+.col3 p {
+    margin: 5px ;
+}
+.col1 img {
+    display: block;
+    margin: 0 auto ;
+}
+
+.img-box {
+    height: 140px ;
+    width: 100% ;
+    border: 1px solid #221 ;
+    margin-bottom: 15px ;
+    border: 1px solid #221 ;
+}
+.color-cont { display: flex ;}
+.color-box {
+    width: 20px ;
+    height: 20px ;
+    margin: 5px ;
+    background-color: #2106ab ;
+}
+.size-cont { display: flex ;}
+.size {
+    background-color: #ddd ;
+    border: 1px solid rgb(81, 81, 81) ;
+    text-align: center;
+    width: 20px ;
+    height: 20px ;
+    margin: 5px ;
+}
+.color-box:hover , .size:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+button {
+    width: 100% ;
+    background-color: #221 ;
+    color: white;
+    padding: 5px ;
+    margin: 8px auto ;
+    border-radius: 3px ;
+    font-size: 1em ;
+}
+
+button:hover {
+    background-color: #333 ;
+}
+.col3 a {
+    display: block;
+    margin-top: 10px ;
+}
+
+/* footr style */ 
+footer {
+    width: 100% ;
+    background-color: #ddd ;
+    
+}
+#inner-footer {
+    width: 70% ;
+    margin: 0  auto ;
+    display: flex ;
+    justify-content: space-around ;
+    padding: 20px 1em 5% 10px ;  
+}
+.footer-brands {
+    font-size: 50px ;
+    font-weight: 700 ;
+    line-height: 1 ;
+}
+.space {
+    height: 50px ;
+}
+footer a , header a  {
+    color: #221 ;
+    text-decoration: none;
+}
+@media (max-width : 750px ) {
+    .three-col {
+        display: block;
+    }
+    .col1 , .col3 {
+        width: 100% ;
+        margin: 20px auto ;
+    }
+    .col2 {display: none ;}
+}

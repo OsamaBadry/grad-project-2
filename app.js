@@ -30,7 +30,7 @@ function Add( itemName , price , imgSrc , id ) {
         <img src="${imgSrc}" width="90%">
         <p class="item-name"> ${itemName} </p>
         <p class="item-price"> Price : <b> ${price} $</b> </p> 
-        <button onclick="removefunc('${id}')"> Remove </button> <br>
+        <button onclick="removefunc('${id}','${price}')"> Remove </button> <br>
     `;
     totalItemsPrice += Number(price) ;
     totalShipingPrice += 10 ;
@@ -38,10 +38,15 @@ function Add( itemName , price , imgSrc , id ) {
     document.getElementById('subtotal').textContent = totalItemsPrice ;
     document.getElementById('shiping').textContent = totalShipingPrice ;
     document.getElementById('total').textContent = totalPrice ;
-    
-
 }
-const removefunc = (itemId) => {
+
+const removefunc = (itemId , price) => {
     let item = document.getElementById( itemId );
     item.remove() ;
+    totalItemsPrice -= Number(price) ;
+    totalShipingPrice -= 10 ;
+    let totalPrice =  totalItemsPrice + totalShipingPrice ;
+    document.getElementById('subtotal').textContent = totalItemsPrice ;
+    document.getElementById('shiping').textContent = totalShipingPrice ;
+    document.getElementById('total').textContent = totalPrice ;
 }
