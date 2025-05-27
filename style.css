@@ -153,12 +153,16 @@ footer {
 }
 .col1  {
     width: 35% ;
-
-
 }
 .col2 {
     width: 35% ;
 }
+.cart-container .product {
+    box-shadow: 5px 5px 8px gray ;
+    padding: 15px ;
+    margin-bottom: 2em ;
+}
+
 .total {
     background-color: #ddd ;
     padding: 1em ;
@@ -179,6 +183,12 @@ p {
 
 /* responsive ************************ ***************************** */
 @media  (max-width: 760px) {
+    header {
+        height: 120px ;
+    }
+    #logo {
+        margin: 10px ;
+    }
   .container , #inner-footer , header {
     display: flex ;
     flex-direction: column ;

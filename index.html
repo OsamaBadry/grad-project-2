@@ -119,28 +119,28 @@
                     <p class="item-name"> Item Name </p>
                     <p class="item-price"> Price : <b> 190$ </b> </p>
                     <button> View Details </button>
-                    <button> Add to Cart </button>
+                    <button onclick="Add('Item Name 1' , '190' , './images/shirt2.png'  , 'item1' )" > Add to Cart </button>
                 </div>
                 <div class="box">
                     <img src="./images/homePant.png" alt="product image" width="90%">
                     <p class="item-name"> Item Name </p>
                     <p class="item-price"> Price : <b> 99$ </b> </p>
                     <button> View Details </button>
-                    <button> Add to Cart </button>
+                    <button onclick="Add('Item Name 2' , '99' , './images/homePant.png' ,'item2' )" > Add to Cart </button>
                 </div>
                 <div class="box">
                     <img src="./images/homeShirt.png" alt="product image" width="90%">
                     <p class="item-name"> Item Name </p>
                     <p class="item-price"> Price : <b> 210$</b> </p>
                     <button> View Details </button>
-                    <button> Add to Cart </button>
+                    <button onclick="Add('Item Name 3' , '210' , './images/homeShirt.png' ,'item3' )"> Add to Cart </button>
                 </div>
                 <div class="box">
                     <img src="./images/pant3.png" alt="product image" width="90%">
-                    <p class="item-name"> Item Name </p>
+                    <p class="item-name"> Item Name 4 </p>
                     <p class="item-price"> Price : <b> 199$</b> </p>
                     <button> View Details </button>
-                    <button> Add to Cart </button>
+                    <button onclick="Add('Item Name 4' , '199' , './images/pant3.png' ,'item4' )"> Add to Cart </button>
                 </div>
             </div>
         </div>
@@ -152,22 +152,18 @@
                 <h2> CART </h2>
             </div>
             <div class="cart-container">
-                <div class="col1">
-                    <div class="product">
-                        <img src="./images/homeShirt.png" alt="product image" width="90%">
-                        <p class="item-name"> Item Name </p>
-                        <p class="item-price"> Price : <b> 120$</b> </p>
-                    </div>
+                <div class="col1" id="cart-products-list">
+                    
                     
                 </div>
                 <div class="col2">
                     <div class="space"></div>
                     <div class="total">
                         <h3> ORDER SUMMARY </h3>
-                        <p> Subtotal :  120$ </p>
-                        <p> Shiping : <span> 10$ </span></p>
+                        <p> Subtotal :  <b id="subtotal"> 0 </b>$ </p>
+                        <p> Shiping : <b id="shiping"> 0 </b> $ </p>
                         <hr>
-                        <p>Total :  <span> 130$ </span></p>
+                        <p>Total :  <b id="total"> 0 </b> $ </p>
                         <div class="space"></div>
                         <input type="checkbox" name="agreement" id="input-agree">
                         <label for="agreement"> I agree to Terms and Conditions </label><br>
