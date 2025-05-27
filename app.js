@@ -50,3 +50,6 @@ const removefunc = (itemId , price) => {
     document.getElementById('shiping').textContent = totalShipingPrice ;
     document.getElementById('total').textContent = totalPrice ;
 }
+
+let nameL = localStorage.getItem('name')
+console.log(nameL)

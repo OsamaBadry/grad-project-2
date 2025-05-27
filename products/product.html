@@ -10,7 +10,7 @@
      <header>
         <div id="nav-list">
             <ul>
-                <li onclick="viewHome()" > Home </li>
+                <li onclick="viewHome()" > <a href="../index.html"> Home </a> </li>
                 <li onclick="viewProducts()" > Products </li>
                 <li onclick="viewCart()" > Cart </li>
             </ul>
@@ -84,7 +84,7 @@
             </div>
         </div>
     </footer>
-    <script src="../app.js"></script>  
+    
     <script>
         let img = document.getElementById('main-img');
         function changeImg (imgId) {
@@ -93,6 +93,7 @@
             img.src = imgS.src;
             console.log(img.src);
         } 
+        localStorage.setItem('name','osama')
 
     </script>
 </body>
