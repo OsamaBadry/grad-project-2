@@ -1,0 +1,91 @@
+*{
+    padding: 0 ;
+    margin: 0 ;
+    font-family: Arial, Helvetica, sans-serif ;
+}
+body {
+    background-color: rgb(241, 248, 255) ;
+}
+header {
+    display: flex ;
+    justify-content: space-between;
+    height: 120px ;
+    margin: 15px ;
+    align-items: center;
+}
+.card {
+    width: 80% ;
+    margin: 15px auto ;
+    background-color: white;
+    padding: 20px ;
+    border-radius: 10px ;
+    box-shadow: 0 0 5px gray ;
+}
+.card-top {
+    display: flex ;
+    justify-content: space-between ;
+}
+.space { height: 100px ;} 
+
+.card-columns {
+    display: flex ;
+    flex-wrap: wrap ;
+}
+.card-columns p {
+    margin-top: 10px ;
+}
+.col1 {
+    width: 60% ;
+}
+.col2 {
+    width: 38;
+}
+.col1 img {
+    width: 150px ;
+}
+span {
+    width: 25px ;
+    height: 25px ;
+    background-color: rgb(20, 32, 94) ;
+    display: inline-block ;
+}
+hr {
+    margin: 10px ;
+}
+.product-details {
+    display: flex ;
+
+}
+.right-info{
+    margin-left: 15px ;
+}
+button {
+    width: 140px ;
+    height: 40px ;
+}
+button.blue {
+    background-color: #0af ;
+    color: white ;
+    border: none ;
+    border-radius: 5px ;
+    margin: 5px ;
+}
+button.blue:hover {
+        background-color: #0cf ;
+}
+button.gray {
+    background-color: rgb(190, 190, 190) ;
+    color: rgb(0, 0, 0) ;
+    border: none ;
+    border-radius: 5px ;
+}
+button.gray:hover {
+    background-color: rgb(225, 225, 225) ;
+}
+
+/* responsive */ 
+@media (max-width : 750px ) {
+    .col1 , .col2 {
+        width: 100% ;
+    }
+}
